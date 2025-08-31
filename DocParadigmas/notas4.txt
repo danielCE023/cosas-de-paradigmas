@@ -1,0 +1,28 @@
+                                            ----WHILE/ do WHILE----
+*-Se ejecuta si la expresion es valida y el do while regeresa mientras sea verdadera
+    while(expresion){
+        /* accion */
+    }
+
+    do{
+        /* accion*/
+
+    }while(expresion)
+
+                                                    ----FOR----
+*-Usa tres expresiones una que se inicia antes del ciclo, una expresion de condioicon para permanecer en el ciclo
+  y un post que se evalua antes de evaluar expr de la siguiente iteración
+
+    for(init, expr, post){
+
+    }
+                                        ----Evaluacion corto circuito----
+*- Or || And &&
+    E1 && E2        E2 np se evalua si E1 es falso
+    E1 || E2        E2 no se evalua si E1 es verdadero
+*-Desventajas:
+    if(a() && b()) <--- no se sabe cuando se ejecuta b 
+
+                                                    ----BREAK----
+*-En c el break solo sale un nivel es un goto implicito
+*-Continue hace que el ocntrol regrese al inicio del ciclo (no se salta las evaluaiones)
