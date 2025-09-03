@@ -1,0 +1,41 @@
+                            ----Variables flobales y efectos colaterales----
+.-Son almacenados en memoria estatica
+.-En c son inicialisadas en 0
+.-Tienen precedencia las variables del ámbito global
+.-Se puede reutilizar el nombre pero la que declares despues se toma solo como variable local
+
+                            ----Aliases y apuntadores perdidos----
+.-Dos expresiones que denotan la misma localidad se denominan alias para el otro
+.-Puntero: Provee acceso indirecto hacia una localidad de memoria
+.-Su tamaño es fijo independiente mente a lo que apunte
+.-Se declaran usando: tipo *nombre;
+
+                            ----Operaciones con punteros----
+.-Asignacion de memoria: p=(int *)malloc(sizeof(int)*1024);
+.-Liberacion de memoria freee();
+
+                            ----Puntero colgados y fugas de memoria----
+p=malloc(n);        p=q;            freee(p);
+q=malloc(m);        MEMORY LEAK 
+
+                            ----Procedimientos----
+.-Son construcciones para darle nombre a prociones de codigo
+    -Cuando el nombre es llamado, se ejecuta el cuerpo
+
+                            ----Recurison----
+.-Muktiples actividades de un procedimiento
+.-Un procedimiento es recursivo si es activado desde su mismo cuerpo
+
+                            ----Beneficios de los procedimientos "El que no el cómo"
+.-Abstraccionn de rocedimientos
+.-Esconder la implementación
+.-Programación modulares: los procedimientos se pueden usar para partiiconar los programas para que 
+ sea mas manejable
+
+                            ----Paso de parámetros----
+.-Los parametros formales de un procedimiento:
+    -Paso por valor A{j}
+
+Un parametro formal corresponde al vlor de un parametro actual:
+    -square(2), square(2+3)
+
