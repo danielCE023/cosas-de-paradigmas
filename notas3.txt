@@ -1,4 +1,4 @@
-						---- Estructuras----
+					---- Estructuras----
 .- La representacion de un objeto involucra variables de diferente tipo.
 .-LAs estructuras o registros permiten que las variables de un objeto sean agrupadas.
 	

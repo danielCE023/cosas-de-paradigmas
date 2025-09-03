@@ -4,7 +4,7 @@ Los lenguajes ayudan a evitar errores mediante:
  --- Notacion legible y compacta
  --- Organización de las computadoras en programas gandes
  ---. Pueden ser entendidas una a la vez
-		
+	
 		---Dijkstra---
 --- Muestra errores pero nunca su ausencia
 --- El arte de programar es el arte de organizar la complejidad

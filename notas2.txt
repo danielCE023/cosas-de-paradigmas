@@ -1,4 +1,4 @@
-								Lenguajes imperativos
+							Lenguajes imperativos
 --- Son la evolución natural del lenguaje máquina
 --- Qué hacer y como hacerlo:
 	-. Mejor rendimiento
