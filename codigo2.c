@@ -4,7 +4,7 @@
  {
          char c;
 
-         c=255;
+         c=0xff;
          if(c==255)
          {
                  printf("Verdadero\n");
