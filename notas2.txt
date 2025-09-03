@@ -1,0 +1,27 @@
+								Lenguajes imperativos
+--- Son la evolución natural del lenguaje máquina
+--- Qué hacer y como hacerlo:
+	-. Mejor rendimiento
+
+----FORTRAN Y C
+--- La mayoria de los programadores son expertos en algun grado
+    en algun lenguaje imperativo
+
+----Variables y asignación---
+
+--- El almacenamiento tiende a ser resservasdo de forma explicita
+	- malloc, free
+--- Los tipos de datos coninciden con los que la maquina puede manipular directamente
+--- Los tipos construidos son hechos con tipos basicos
+	- struct, unión, array, pointer
+
+---- Conversión de tipos----
+
+--- Explicita: (double)2 * 3.1416
+--- Implícita: 2 * 3.1416 -> 2.0 * 3.1416
+
+----Arreglos----
+
+--- int a[25] -. a es una direcció, solo se suma un desplazamiento
+	a[10] -> *(a+10)
+	-No se incluyen los limites

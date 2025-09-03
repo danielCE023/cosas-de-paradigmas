@@ -1,0 +1,85 @@
+						---- Estructuras----
+.- La representacion de un objeto involucra variables de diferente tipo.
+.-LAs estructuras o registros permiten que las variables de un objeto sean agrupadas.
+	
+		-.struct complejo{
+			double real;
+			double imag;
+			};
+.-Un cambio en el orden de la declaración de los campos no afecta el funcionamiento
+	.-se tiene acceso por nombre no por inserción
+
+						----Uniones----
+.-Objetos comparten caracteristicas comunes y tienen partes que los hacen distintos
+ de los otros.						  paisorigen
+		struct personas{			________________
+		char nombre[50];		_______	|		|
+		int extranjero;			curp	|		|___
+		union				-------	|		|
+		{					|    memoria	|union
+		char paisorigen[50];			|		|
+	char CURP[20];					|_______________|___
+		};
+		};
+						----Uniones cont----
+
+.-En C comparten memoria
+.-sizeof() reporta el tamaño del elemento más grande printf(%x)<--- imprime hexagesimal
+						    ---GOTO---
+.-El (ir a) es un salto incondicional
+.-Ampliamete usado en FORTRAN
+.-Difícil de seguir en el código
+
+read(x);			read(x);
+2 if x=0 then goto 8;		while x!=0 do begin 
+  writeln(x);			writeln(x);
+4 read(next);			repeat
+  if next = x then goto 4;	   read(next)
+  goto 2;			until next !=x
+8 ;				x:=next;
+				end;
+
+				----Dijkstra: "Go To Statement Considered Harmful"----
+.-El goto es demasiado primitivo
+	-Es una invitación al desastre
+		
+						----Programación estructurada----
+.-Los valores de las variables pueden cambiar mientras el programa corre.
+.-Los programas no son lo mismo que las computaciones (las acciones que ocurren mientras corre)
+.-Una secuencia de computaciones consiste eb uba secuncia de acciones
+	printf("%d\n", 1);
+.-Ocurre un prolema cuendo el lector no puede comprender las acciones que se llevan acabo cuando el programa
+  corre
+.-Un programa estructurado si el flujo de control a lo largo del programa es evidente desde la estructura sintactica
+  del texto del programa
+												----Composición de condicionales----
+
+.- Si la expreción es verdad entonces el control para la acción1, de otra forma fluye a acción2
+
+	if(expreción){
+		/* acción1*/
+	}
+	else{
+		/*acción2*/
+	}
+
+.- Una forma de evitar anidar if es:
+	if(expr1){
+
+	}
+
+														----Caso swtch----
+
+.-Se evalua expr, si su valor es igual al de alguna constante, entonces se ejecuta la acción correspondiente
+.-En caso contrario se ejcuta la acción predeterminada.
+
+LA IMPLEMENTACION DEPENDE DEL COMPILADOR 
+	- Usando condicionales if-elss
+	- Se usa expr como in indice en una tabla de saltos:
+
+.-Si el número de casos es grande y muchas entradas no son usadas es mejor usar una tabla hash
+  Ejemplo:
+  hash = entrada%30;		Es un mapeo de la opsicion original a un arreglo mas pequeño
+
+  DESVENTAJA: Tiene coliisión
+

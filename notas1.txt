@@ -1,0 +1,13 @@
+-------------------------------			Lenguajes de programación y la ingenieria de software
+
+Los lenguajes ayudan a evitar errores mediante:
+ --- Notacion legible y compacta
+ --- Organización de las computadoras en programas gandes
+ ---. Pueden ser entendidas una a la vez
+		
+		---Dijkstra---
+--- Muestra errores pero nunca su ausencia
+--- El arte de programar es el arte de organizar la complejidad
+--- Debemos organizar las compuradoras de tal forma que nuestras capacitades
+    limitadas sean suficientes para garantizar que la computación establezca el
+    efecto deseado
