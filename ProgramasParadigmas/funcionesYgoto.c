@@ -16,12 +16,12 @@ int main()
 
 retorno1:                  // punto de regreso
     printf("Fin del programa\n");
-    return 0;
+    return 0;  // "return" hacia el punto de regreso
     
 
 llamar_saludo:            // "cuerpo de la función"
-    printf("Hola desde función\n");
+    printf("Hola desde función con goto\n");
     goto retorno1;
-    // "return" hacia el punto de regreso
+   
 }
 
