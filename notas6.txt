@@ -1,0 +1,13 @@
+                            ----Reglas de ambito para la encapsulación----
+-son la herramiento primaria para la encapsulación
+-se puede especificar que nombres se pueden hacer visibles o invisibles fuera del objeto
+                           
+                            .-Invariantes de datos.-
+-Es una propiedad del estado local de un objeto que se mantiene cuando el control no esta
+ en el objeto
+                            ----Visivilidad de los datos----
+-Asignacion a variables publicas pueden cambiar el estado local de un objeto
+-Depende del usuario el asegurarse que dichas asignaciones no perturben los datos
+ Invariantes
+ -Crear métodos para leer y sagnar valores, manteniendo los datos privados.
+    -El preferible a hacer los datos publicos
