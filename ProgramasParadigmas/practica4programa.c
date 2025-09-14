@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    float f=-5.75;
-    double d=-5.75;
+    float f=3.5;
+    double d=3.5;
 
-    // se usan los unsigned para recorrer la memoria
+    // se usan las variables unsigned para recorrer la memoria
     
     unsigned char *pf = (unsigned char*)&f;
     unsigned char *pd = (unsigned char*)&d;
