@@ -1,0 +1,34 @@
+                            ----Encapsulacion y desarrollo de programas----
+.-La encapsulacion preserva la integridad del diseño
+
+.-Hace que un diseño limpio sea critico
+.-Si la estructura del programa no es la decuada la encapsulacion "estorba"
+.-Lo mas dificil es descubrir los objetos correctos, los modulos corrrectosy el pundo
+ de vista correcto para diseñar una computación
+                            *----Miembros datos y métodos----*
+.-Una clase se compone de datos y sus operaciones
+    -Métodos (funiones miembro)
+    -Datos: definen el estado del objeto
+.-Un mensaje a un objeto corresponde a una llamada a procedimeiento.
+.-La definición de la clase contiene variables para los objetos
+
+                            *---Control de acceso----*
+.-La privacidad y el control de acceso esta restringedo en c++
+
+                            |----Paso por referencia----|
+.-Para recibir un objeto en un metodo es recomendable usar referencias
+    -c++ soporta paso por referencia
+.-Para indicar que el objeto recibido no se debe modificar se usa const
+
+    complejo complejo::suma (const complejo &op)
+    {
+        complejo res;
+        res.mreal =mreal + op.mreal;
+        res.mimag= mimag + op.mimag;
+        return res;
+    }
+                            |----El puntero this----|
+.-this es un punterp al objeto activo
+.-Es necesario usar el operador flecha (->) para tener acceso a los atributos o métodos deñ objeto
+    *****-------*****
+    this se usa para eliminar ambiguedad en los objetos

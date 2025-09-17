@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    float f=3.5;
+    float f=0.5;
     double d=3.5;
 
     // se usan las variables unsigned para recorrer la memoria
